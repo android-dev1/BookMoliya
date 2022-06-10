@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/homeFragment2">
+
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="uz.gita.bookmoliya.ui.screen.impl.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment2_to_selectedFragment2"
+            app:destination="@id/selectedFragment2" />
+        <action
+            android:id="@+id/action_homeFragment2_to_chapterActivity"
+            app:destination="@id/chapterActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectedFragment2"
+        android:name="uz.gita.bookmoliya.ui.screen.impl.SelectedFragment"
+        android:label="fragment_selected"
+        tools:layout="@layout/fragment_selected" >
+        <action
+            android:id="@+id/action_selectedFragment2_to_chapterActivity"
+            app:destination="@id/chapterActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/chapterActivity"
+        android:name="uz.gita.bookmoliya.ui.screen.impl.ChapterActivity"
+        android:label="activity_chapter"
+        tools:layout="@layout/activity_chapter" />
+    <activity
+        android:id="@+id/chapterPicturesActivity"
+        android:name="uz.gita.bookmoliya.ui.screen.impl.ChapterPicturesActivity"
+        android:label="activity_chapter_pictures"
+        tools:layout="@layout/activity_chapter_pictures" />
+    <activity
+        android:id="@+id/themeActivity"
+        android:name="uz.gita.bookmoliya.ui.screen.impl.ThemeActivity"
+        android:label="activity_theme"
+        tools:layout="@layout/activity_theme" />
+</navigation>

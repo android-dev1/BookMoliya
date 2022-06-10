@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/background_book.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/background_btn.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/background_btn_pictures.xml" value="0.2435" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/background_chapter_with_theme.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/background_dialog_about.xml" value="0.1425" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/background_img_btn.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/background_ripple.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/background_settings_bottom_sheet.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/backround_book.xml" value="0.1095" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/backround_img_btns.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/backround_ripple.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/backround_search.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/ic_about.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/ic_back.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/ic_book.xml" value="0.2405" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/ic_bookmark.xml" value="0.1505" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/ic_bookmark_click.xml" value="0.1505" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/ic_chapter.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/ic_close.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/ic_down.xml" value="0.244" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/ic_home.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/ic_home_selected.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/ic_image.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/ic_next_picture.xml" value="0.2435" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/ic_not_fovorite.xml" value="0.2045" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/ic_prev_picture.xml" value="0.2435" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/ic_search.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/ic_selected.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/ic_settings.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/ic_share.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/drawable/ic_up.xml" value="0.244" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/font/roboto.xml" value="0.10555555555555556" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/layout/activity_chapter.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/layout/activity_chapter_pictures.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/layout/activity_sections.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/layout/activity_theme.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/layout/content_theme.xml" value="0.2375" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/layout/dialog_about.xml" value="0.2" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/layout/dialog_bottomsheet_settings.xml" value="0.2" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/layout/fragment_first.xml" value="0.2375" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/layout/fragment_second.xml" value="0.2375" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/layout/fragment_selected.xml" value="0.35815047021943575" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/layout/item_chapter.xml" value="0.2375" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/layout/item_chapter_with_theme.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/layout/item_sections.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/layout/item_theme.xml" value="0.1" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/menu/menu_home_bottom_navigation.xml" value="0.2" />
+        <entry key="..\:/Users/User/BookMoliya/app/src/main/res/menu/menu_theme_bottom_navigation.xml" value="0.22950819672131148" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

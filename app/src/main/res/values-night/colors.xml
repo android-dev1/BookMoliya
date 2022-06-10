@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#151515</color>
+    <color name="color_primary_opacity_5">#000000</color>
+    <color name="white_200">#FFFFFF</color>
+    <color name="color_primary">#52489C</color>
+    <color name="line">#151515</color>
+    <color name="white">#1C1C1C</color>
+    <color name="white_100">#313131</color>
+    <color name="icon_primary">#F7F7F7</color>
+    <color name="icon_700">#B8B8B8</color>
+    <color name="text_primary">#F5F5F5</color>
+    <color name="text_900">#F5F5F5</color>
+    <color name="text_700">#B7B7B7</color>
+    <color name="text_200">#33D6D5DE</color>
+    <color name="text_500">#FCFCFC</color>
+    <color name="yellow">#D0FF00</color>
+    <color name="red">#FF00AE</color>
+    <color name="blue">#3AE2CE</color>
+</resources>

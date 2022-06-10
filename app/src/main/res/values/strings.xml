@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Investitsiya darsligi</string>
+    <string name="title_activity_theme">ThemeActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="large_text">
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">asosiy</string>
+    <string name="settings">sozlamalar</string>
+    <string name="chapter">bob</string>
+    <string name="selected">saralanganlar</string>
+    <string name="search">Qidirish</string>
+    <string name="settings_1">Sozlamalar</string>
+    <string name="night_mode">Tungi rejim</string>
+    <string name="chapter_picture">Bobga doir rasmlar</string>
+    <string name="sections">Bob</string>
+    <string name="book_name">Investitsiya va innovatsiyalar</string>
+    <string name="writers">E.Nasirov,D.Shadiyeva,\nSh.Asamxodjaeva,S.Yunusova</string>
+    <string name="select">Saralanganlar</string>
+    <string name="read">O\'qish</string>
+    <string name="text_about">Mazkur elektron darslik oliy o’quv yurtlarining iqtisodiy yo’nalishida o’qiyotgan bakalavr, magistrantlariga, mustaqil tadqiqotchilar,professor o’qituvchilar va investitsiya sohasiga qiziquvchi hamda shug’ullanuvchilarga mo’ljallangan.\n\nElektron darslik mualliflari:\nE.Nasirov\nD.Shadiyeva\nSh.Asamxodjaeva\nS.Yunusova</string>
+    <string name="close">Yopish</string>
+    <string name="not_favorite">Saralangan boblar mavjud emas</string>
+</resources>
