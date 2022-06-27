@@ -7,43 +7,49 @@
     android:background="@color/background"
     tools:context=".ui.screen.impl.ThemeActivity">
 
-    <LinearLayout
+    <androidx.cardview.widget.CardView
         android:id="@+id/appbar"
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
-        android:orientation="horizontal"
+        android:elevation="@dimen/_8sdp"
+        app:cardBackgroundColor="@color/background"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/tv_theme_name"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="@dimen/_8sdp"
-            android:layout_weight="1"
-            android:fontFamily="@font/roboto_regular"
-            android:maxLines="1"
-            android:text="1.1. Moliyaning ijtimoiy bir balolari"
-            android:textColor="@color/text_900"
-            android:textSize="@dimen/_16sdp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:orientation="horizontal">
 
-        <ImageButton
-            android:id="@+id/img_btn_picture"
-            android:clickable="true"
-            android:layout_width="@dimen/_24sdp"
-            android:layout_height="@dimen/_24sdp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="@dimen/_8sdp"
-            android:layout_marginEnd="@dimen/_16sdp"
-            android:background="@drawable/background_img_btn"
-            android:src="@drawable/ic_image"
-            android:focusable="true" />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/tv_theme_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_regular"
+                android:maxLines="1"
+                android:text="1.1. Moliyaning ijtimoiy bir balolari"
+                android:textColor="@color/text_900"
+                android:textSize="@dimen/_16sdp" />
+
+            <ImageButton
+                android:id="@+id/img_btn_picture"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_image" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@id/bottom_navigation_theme"
         app:layout_constraintTop_toBottomOf="@id/appbar">
 
@@ -55,10 +61,10 @@
             android:layout_marginTop="@dimen/_16sdp"
             android:layout_marginEnd="@dimen/_8sdp"
             android:fontFamily="@font/roboto_regular"
+            android:paddingBottom="@dimen/_16sdp"
             android:text="@string/text_about"
             android:textColor="@color/text_700"
-            android:textSize="@dimen/_16sdp"
-            android:paddingBottom="@dimen/_16sdp"/>
+            android:textSize="@dimen/_16sdp" />
     </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

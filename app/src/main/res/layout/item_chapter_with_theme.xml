@@ -15,7 +15,7 @@
         android:id="@+id/const_container_chapter_with_theme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/background_chapter_with_theme"
+        android:background="?android:selectableItemBackgroundBorderless"
         android:clickable="true"
         android:focusable="true"
         android:orientation="vertical">
@@ -44,7 +44,7 @@
                 android:layout_width="@dimen/_24sdp"
                 android:layout_height="@dimen/_24sdp"
                 android:layout_marginEnd="@dimen/_4sdp"
-                android:background="@drawable/background_img_btn"
+                android:background="?android:selectableItemBackgroundBorderless"
                 android:clickable="true"
                 android:focusable="true"
                 android:src="@drawable/ic_bookmark_click" />

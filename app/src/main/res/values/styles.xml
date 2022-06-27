@@ -13,7 +13,6 @@
         <item name="android:layout_width">@dimen/_28sdp</item>
         <item name="android:layout_height">@dimen/_28sdp</item>
         <item name="android:padding">@dimen/_4sdp</item>
-        <item name="android:background">@drawable/background_img_btn</item>
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
     </style>

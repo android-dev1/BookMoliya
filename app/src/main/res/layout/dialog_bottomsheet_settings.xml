@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -29,7 +29,7 @@
             android:layout_height="@dimen/_24sdp"
             android:layout_gravity="end"
             android:layout_marginEnd="@dimen/_16sdp"
-            android:background="@drawable/background_img_btn"
+            android:background="?android:selectableItemBackgroundBorderless"
             android:src="@drawable/ic_close"
             android:focusable="true" />
     </FrameLayout>
@@ -48,8 +48,9 @@
             android:id="@+id/btn_decrement"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="0dp"
-            android:layout_height="@dimen/_48sdp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
+            app:backgroundTint="@null"
             android:background="@drawable/background_ripple"
             android:fontFamily="@font/roboto_medium"
             android:text="A"
@@ -67,6 +68,7 @@
             android:layout_width="0dp"
             android:layout_height="@dimen/_48sdp"
             android:layout_weight="1"
+            app:backgroundTint="@null"
             android:background="@drawable/background_ripple"
             android:fontFamily="@font/roboto_medium"
             android:text="A"

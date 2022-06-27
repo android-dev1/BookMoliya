@@ -22,10 +22,10 @@ import uz.gita.bookmoliya.ui.adapter.ChapterAdapter
 import uz.gita.bookmoliya.ui.screen.HomeView
 import java.lang.reflect.Array
 
-class HomeFragment:Fragment(R.layout.fragment_home),HomeView {
+class HomeFragment : Fragment(R.layout.fragment_home), HomeView {
     private val binding by viewBinding(FragmentHomeBinding::bind)
-    private val presenter:HomePresenter=HomePresenterImpl(HomeModelImpl())
-    private lateinit var  adapter:ChapterAdapter
+    private val presenter: HomePresenter = HomePresenterImpl(HomeModelImpl())
+    private lateinit var adapter: ChapterAdapter
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -33,7 +33,7 @@ class HomeFragment:Fragment(R.layout.fragment_home),HomeView {
         initViews()
     }
 
-    private fun initViews(){
+    private fun initViews() {
         binding.apply {
             imgBtnShare.setOnClickListener {
                 presenter.onShare()
@@ -42,15 +42,16 @@ class HomeFragment:Fragment(R.layout.fragment_home),HomeView {
                 presenter.onAbout()
             }
 
-            adapter= ChapterAdapter {
+            adapter = ChapterAdapter {
                 presenter.transfer(it)
             }
-            rvContainerChapterWithLessons.layoutManager=LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
-            rvContainerChapterWithLessons.adapter=adapter
+            rvContainerChapterWithLessons.layoutManager =
+                LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+            rvContainerChapterWithLessons.adapter = adapter
             presenter.joinChapter()
-            searchView.setOnQueryTextListener(object :SearchView.OnQueryTextListener{
+            searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
                 override fun onQueryTextSubmit(query: String?): Boolean {
-                    if(query!=null && query!=""){
+                    if (query != null && query != "") {
                         presenter.onSearch(query.trim())
                         Log.d("1111", "onQueryTextChange:$query")
                     } else presenter.joinChapter()
@@ -58,7 +59,7 @@ class HomeFragment:Fragment(R.layout.fragment_home),HomeView {
                 }
 
                 override fun onQueryTextChange(newText: String?): Boolean {
-                    if(newText==null || newText==""){
+                    if (newText == null || newText == "") {
                         presenter.joinChapter()
                     }
                     return true
@@ -68,28 +69,38 @@ class HomeFragment:Fragment(R.layout.fragment_home),HomeView {
     }
 
 
-
     override fun showChapters(listChapters: List<Chapter>) {
+        if (listChapters.isNotEmpty()) {
+            binding.lineNotFavorite.visibility = View.INVISIBLE
+        } else {
+            binding.lineNotFavorite.visibility = View.VISIBLE
+        }
         adapter.submitList(listChapters)
         adapter.notifyDataSetChanged()
     }
 
     override fun firstShowChapter(listChapters: List<Chapter>) {
+        if (listChapters.isNotEmpty()) {
+            binding.lineNotFavorite.visibility = View.INVISIBLE
+        } else {
+            binding.lineNotFavorite.visibility = View.VISIBLE
+        }
         adapter.submitList(listChapters)
+        adapter.notifyDataSetChanged()
     }
 
     override fun setShare() {
         val intent = Intent(Intent.ACTION_SEND)
         intent.type = "type/plain"
         val body = "Ilovani yuklab olish uchun link"
-        val sub = "https://play.google.com/store/apps/details?id=uz.gita.puzzlebyme"
+        val sub = "https://play.google.com/store/apps/details?id=uz.gita.bookmoliya"
         intent.putExtra(Intent.EXTRA_TEXT, body)
         intent.putExtra(Intent.EXTRA_TEXT, sub)
         startActivity(Intent.createChooser(intent, "Ilovani ulashing!"))
     }
 
     override fun showDialog() {
-        val dialog=Dialog(requireContext())
+        val dialog = Dialog(requireContext())
         val view = layoutInflater.inflate(R.layout.dialog_about, null, false)
         val btnClose = view.findViewById<Button>(R.id.btn_about_close)
 
@@ -102,8 +113,8 @@ class HomeFragment:Fragment(R.layout.fragment_home),HomeView {
     }
 
     override fun transferChapter(id: Int) {
-        val intent=Intent(requireContext(), ChapterActivity::class.java)
-        intent.putExtra("id",id)
+        val intent = Intent(requireContext(), ChapterActivity::class.java)
+        intent.putExtra("id", id)
         startActivity(intent)
     }
 

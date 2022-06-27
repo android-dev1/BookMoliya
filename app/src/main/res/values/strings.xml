@@ -29,4 +29,5 @@
     <string name="text_about">Mazkur elektron darslik oliy o’quv yurtlarining iqtisodiy yo’nalishida o’qiyotgan bakalavr, magistrantlariga, mustaqil tadqiqotchilar,professor o’qituvchilar va investitsiya sohasiga qiziquvchi hamda shug’ullanuvchilarga mo’ljallangan.\n\nElektron darslik mualliflari:\nE.Nasirov\nD.Shadiyeva\nSh.Asamxodjaeva\nS.Yunusova</string>
     <string name="close">Yopish</string>
     <string name="not_favorite">Saralangan boblar mavjud emas</string>
+    <string name="not_found">Bunday bob mavjud emas</string>
 </resources>

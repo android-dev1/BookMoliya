@@ -8,46 +8,54 @@
     android:orientation="vertical"
     tools:context=".ui.screen.impl.ChapterActivity">
 
-    <LinearLayout
+    <androidx.cardview.widget.CardView
         android:id="@+id/appbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:elevation="@dimen/_8sdp"
+        app:cardBackgroundColor="@color/background"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageButton
-            android:id="@+id/img_btn_back"
-            android:src="@drawable/ic_back"
-            style="@style/theme_btn"
-            android:layout_marginStart="@dimen/_16sdp"
-            android:layout_gravity="center_vertical"/>
-
-        <TextView
-            android:id="@+id/tv_chapter_name"
-            android:layout_width="0dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:layout_marginStart="@dimen/_4sdp"
-            android:layout_weight="1"
-            android:fontFamily="@font/roboto_regular"
-            android:layout_marginTop="@dimen/_8sdp"
-            android:layout_marginBottom="@dimen/_8sdp"
-            android:text="1.1. Moliyaning ijtimoiy bir balolari"
-            android:textColor="@color/text_900"
-            android:textSize="@dimen/_16sdp" />
+            android:orientation="horizontal">
 
-        <ImageButton
-            android:id="@+id/img_btn_favorite"
-            android:layout_width="@dimen/_24sdp"
-            android:layout_height="@dimen/_24sdp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="@dimen/_4sdp"
-            android:layout_marginEnd="@dimen/_16sdp"
-            android:background="@drawable/background_img_btn"
-            android:clickable="true"
-            android:focusable="true"
-            android:src="@drawable/ic_bookmark" />
-    </LinearLayout>
+            <ImageButton
+                android:id="@+id/img_btn_back"
+                style="@style/theme_btn"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/tv_chapter_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_regular"
+                android:text="1.1. Moliyaning ijtimoiy bir balolari"
+                android:textAlignment="center"
+                android:textColor="@color/text_900"
+                android:textSize="@dimen/_16sdp" />
+
+            <ImageButton
+                android:id="@+id/img_btn_favorite"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_bookmark" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_container_theme"
@@ -58,8 +66,8 @@
         android:clipToPadding="false"
         android:overScrollMode="never"
         android:paddingTop="@dimen/_8sdp"
-        app:layout_constraintTop_toBottomOf="@id/appbar"
         app:layout_constraintBottom_toTopOf="@id/btn_read"
+        app:layout_constraintTop_toBottomOf="@id/appbar"
         tools:listitem="@layout/item_theme" />
 
     <Button
@@ -70,7 +78,6 @@
         android:background="@drawable/background_btn"
         android:text="@string/read"
         android:textColor="@color/white_200"
-
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
